@@ -31,7 +31,7 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base {{r_version}}
     - r-mass
     - r-rcpp >=0.12.2
     - r-rcppeigen
@@ -44,7 +44,7 @@ requirements:
     - r-tweenr >=0.1.5
     - r-withr
   run:
-    - r-base
+    - r-base {{r_version}}
     - {{ native }}gcc-libs         # [win]
     - r-mass
     - r-rcpp >=0.12.2
